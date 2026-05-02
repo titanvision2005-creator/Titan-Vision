@@ -103,18 +103,17 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.markdown('<div class="section"><div class="icon">📊</div><div class="label">Dashboard</div></div>', unsafe_allow_html=True)
     if st.button("Open", key="dash"):
-        st.switch_page("pages/dashboard.py")
+        st.switch_page("pages/My_Dashboard📊.py")
 
 with col2:
     st.markdown('<div class="section"><div class="icon">🧾</div><div class="label">Squad Explorer</div></div>', unsafe_allow_html=True)
     if st.button("Open", key="squad"):
-        st.switch_page("pages/squad.py")
+        st.switch_page("pages/Squad_Explorer🧾.py")
 
 with col3:
     st.markdown('<div class="section"><div class="icon">🏟</div><div class="label">Venue Analysis</div></div>', unsafe_allow_html=True)
     if st.button("Open", key="venue"):
-        st.switch_page("pages/venue_performance.py")
-
+        st.switch_page("pages/Venue_Wise_Team_Performance_Analysis🏟.py")
 
 # ROW 2 → Opponent, Venue Player, Playing XI
 col4, col5, col6 = st.columns(3)
@@ -122,14 +121,14 @@ col4, col5, col6 = st.columns(3)
 with col4:
     st.markdown('<div class="section"><div class="icon">⚔️</div><div class="label">Opponent Analysis</div></div>', unsafe_allow_html=True)
     if st.button("Open", key="opp"):
-        st.switch_page("pages/opponent.py")
+        st.switch_page("pages/Opponent_Wise_Venue_Wise_Team_Performance_Analysis⚔️.py")
 
 with col5:
     st.markdown('<div class="section"><div class="icon">👤</div><div class="label">Venue Player Analysis</div></div>', unsafe_allow_html=True)
     if st.button("Open", key="player"):
-        st.switch_page("pages/venue_player_performance.py")
+        st.switch_page("pages/Venue_Wise_Player_Performance_Analysis👤.py")
 
 with col6:
     st.markdown('<div class="section"><div class="icon">🏏</div><div class="label">Playing XI</div></div>', unsafe_allow_html=True)
     if st.button("Open", key="xi"):
-        st.switch_page("pages/playing_XI.py")
+        st.switch_page("pages/Playing_XI_Recommendation🏏.py")
