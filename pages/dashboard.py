@@ -47,7 +47,7 @@ st.markdown("""
 col1, col2, col3 = st.columns([1,2,1])
 with col2:
     st.image("logo.png")
-    st.markdown("<h1 class='title-center'>Gujrat Titans Dashboard</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='title-center'>Gujarat Titans Dashboard</h1>", unsafe_allow_html=True)
     st.markdown("<h4 class='title-center'>Champions • Squad • Stats • Legacy</h4>", unsafe_allow_html=True)
 
 st.divider()
