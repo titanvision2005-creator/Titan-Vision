@@ -377,6 +377,9 @@ color:#07111F;
 # =========================
 
 st.markdown(f"""
+/* =========================
+   TITANVISION HERO
+========================= */
 
 .hero{
     width:100%;
@@ -414,8 +417,6 @@ st.markdown(f"""
 
     letter-spacing:-2px;
 
-    white-space:normal;
-
 }
 
 
@@ -434,10 +435,9 @@ st.markdown(f"""
 }
 
 
-
 /* MOBILE FIX */
 
-@media(max-width:600px){
+@media (max-width:600px){
 
     .hero{
 
@@ -445,15 +445,15 @@ st.markdown(f"""
 
     }
 
-
     .hero-title{
 
-        line-height:1.2;
+        font-size:48px;
+
+        line-height:1.15;
 
         letter-spacing:-1px;
 
     }
-
 
 }
 
