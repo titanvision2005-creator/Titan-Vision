@@ -377,86 +377,33 @@ color:#07111F;
 # =========================
 
 st.markdown(f"""
-/* =========================
-   TITANVISION HERO
-========================= */
-
 .hero{
-    width:100%;
-    text-align:center;
-    padding-top:40px;
+    text-align: center;
+    padding: 30px 20px;
 }
-
-
-/* LOGO */
 
 .hero img{
-
-    width:clamp(150px,18vw,230px);
-    height:clamp(150px,18vw,230px);
-
-    object-fit:contain;
-    border-radius:50%;
-
-    margin-bottom:25px;
-
+    width: 140px;
+    max-width: 35vw;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
-
-
-/* TITLE */
 
 .hero-title{
-
-    font-size:clamp(45px,6vw,80px);
-
-    font-weight:900;
-
-    color:white;
-
-    line-height:1.1;
-
-    letter-spacing:-2px;
-
+    font-size: clamp(40px, 8vw, 70px);
+    font-weight: 800;
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 12px;
+    word-break: keep-all;
+    overflow-wrap: normal;
 }
-
-
-/* SUBTITLE */
 
 .hero-subtitle{
-
-    font-size:clamp(18px,2.5vw,30px);
-
-    color:#d9dce6;
-
-    margin-top:25px;
-
-    padding:0 15px;
-
+    font-size: clamp(18px, 3vw, 24px);
+    color: #cfcfcf;
+    margin-top: 10px;
 }
-
-
-/* MOBILE FIX */
-
-@media (max-width:600px){
-
-    .hero{
-
-        padding-top:20px;
-
-    }
-
-    .hero-title{
-
-        font-size:48px;
-
-        line-height:1.15;
-
-        letter-spacing:-1px;
-
-    }
-
-}
-
 
 """,
 unsafe_allow_html=True)
