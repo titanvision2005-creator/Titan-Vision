@@ -502,7 +502,7 @@ with a:
         "Open Dashboard"
     ):
         st.switch_page(
-            "pages/dashboard.py"
+            "pages/My_Dashboard📊.py"
         )
 
 
@@ -568,17 +568,17 @@ cards=[
 
 ("🏟","Venue Analysis",
 "Venue trends",
-"pages/venue_performance.py"),
+"pages/Venue_Wise_Team_Performance_Analysis🏟.py"),
 
 
 ("⚔️","Opponent Analysis",
 "Opponent study",
-"pages/opponent.py"),
+"pages/Opponent_Wise_Venue_Wise_Team_Performance_Analysis⚔️.py"),
 
 
 ("🎯","Venue Specialists",
 "Best performers",
-"pages/venue_player_performance.py")
+"pages/Venue_Wise_Player_Performance_Analysis👤.py")
 
 ]
 
@@ -683,5 +683,5 @@ if st.button(
 ):
 
     st.switch_page(
-        "pages/playing_XI.py"
+        "pages/Playing_XI_Recommendation🏏.py"
     )
