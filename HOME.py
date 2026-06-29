@@ -535,7 +535,7 @@ with b:
         "Open Squad Explorer"
     ):
         st.switch_page(
-            "pages/squad.py"
+            "pages/Squad_Explorer🧾.py"
         )
 
 
