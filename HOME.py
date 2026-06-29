@@ -378,21 +378,84 @@ color:#07111F;
 
 st.markdown(f"""
 
-<div class="hero">
-
-<img src="data:image/png;base64,{logo}">
-
-<div class="hero-title">
-TitanVision
-</div>
+.hero{
+    width:100%;
+    text-align:center;
+    padding-top:40px;
+}
 
 
-<div class="hero-subtitle">
-Cricket Intelligence Platform 🏏
-</div>
+/* LOGO */
+
+.hero img{
+
+    width:clamp(150px,18vw,230px);
+    height:clamp(150px,18vw,230px);
+
+    object-fit:contain;
+    border-radius:50%;
+
+    margin-bottom:25px;
+
+}
 
 
-</div>
+/* TITLE */
+
+.hero-title{
+
+    font-size:clamp(45px,6vw,80px);
+
+    font-weight:900;
+
+    color:white;
+
+    line-height:1.1;
+
+    letter-spacing:-2px;
+
+    white-space:normal;
+
+}
+
+
+/* SUBTITLE */
+
+.hero-subtitle{
+
+    font-size:clamp(18px,2.5vw,30px);
+
+    color:#d9dce6;
+
+    margin-top:25px;
+
+    padding:0 15px;
+
+}
+
+
+
+/* MOBILE FIX */
+
+@media(max-width:600px){
+
+    .hero{
+
+        padding-top:20px;
+
+    }
+
+
+    .hero-title{
+
+        line-height:1.2;
+
+        letter-spacing:-1px;
+
+    }
+
+
+}
 
 
 """,
