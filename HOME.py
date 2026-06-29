@@ -84,7 +84,7 @@ padding:35px;
 
 .hero img{
 
-width:140px;
+width:min(140px,35vw);
 border-radius:50%;
 
 }
@@ -92,7 +92,7 @@ border-radius:50%;
 
 .hero-title{
 
-font-size:58px;
+font-size:clamp(40px,8vw,58px);
 font-weight:900;
 color:#F8FAFC;
 
@@ -377,40 +377,20 @@ color:#07111F;
 # =========================
 
 st.markdown(f"""
-.hero{
-    text-align: center;
-    padding: 30px 20px;
-}
+<div class="hero">
 
-.hero img{
-    width: 140px;
-    max-width: 35vw;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
+<img src="data:image/png;base64,{logo}">
 
-.hero-title{
-    font-size: clamp(40px, 8vw, 70px);
-    font-weight: 800;
-    color: white;
-    line-height: 1.1;
-    margin-bottom: 12px;
-    word-break: keep-all;
-    overflow-wrap: normal;
-}
+<div class="hero-title">
+TitanVision
+</div>
 
-.hero-subtitle{
-    font-size: clamp(18px, 3vw, 24px);
-    color: #cfcfcf;
-    margin-top: 10px;
-}
+<div class="hero-subtitle">
+Cricket Intelligence Platform 🏏
+</div>
 
-""",
-unsafe_allow_html=True)
-
-
-
-
+</div>
+""", unsafe_allow_html=True)
 
 # =========================
 # STATS
